@@ -1,0 +1,31 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.row{
+  --bs-gutter-x:0rem;
+}
+.section{
+    
+    background: rgb(20, 26, 32);
+}
+.heading , #cls{
+    color: rgb(255, 94, 0);
+}
+.form-control{
+    background: transparent;
+    border: 2px solid rgb(189, 214, 255);
+    border-radius: 0;
+    color: white;
+}
+.btn-success{
+    background: none;
+}
+#test:hover{
+    transition: .5s all;
+    transform: scale(1.1);
+    background: success;
+}
