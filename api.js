@@ -1,4 +1,5 @@
 
+
 let parametersBox = document.getElementById('parametersBox');
 parametersBox.style.display = 'none';
 
@@ -7,16 +8,16 @@ parametersBox.style.display = 'none';
 let json = document.getElementById('json');
 json.addEventListener('click', () => {
 
-    document.getElementById('requestJsonBox').style.display = 'none';
-    document.getElementById('parametersBox').style.display = 'block';
+    document.getElementById('requestJsonBox').style.display = 'block';
+    document.getElementById('parametersBox').style.display = 'none';
 });
 
 // click event function for parameters
 let parameter = document.getElementById('parameter');
 parameter.addEventListener('click', () => {
 
-    document.getElementById('requestJsonBox').style.display = 'block';
-    document.getElementById('parametersBox').style.display = 'none';
+    document.getElementById('requestJsonBox').style.display = 'none';
+    document.getElementById('parametersBox').style.display = 'block';
 });
 
 let newParaCount = 0;  // i define initial count of parameters from 0.
@@ -65,6 +66,7 @@ addPara.addEventListener('click', () => {
 // Test button click event conditional function
 let test = document.getElementById('test');
 test.addEventListener('click', () => {
+
 
     document.getElementById('responseBox').innerHTML = 'Fetching api response...';
 
@@ -119,7 +121,11 @@ test.addEventListener('click', () => {
     }
 
 
-// There console logs are using to see if any error occur , will reconize easily
+
+
+
+
+    // There console logs are using to see if any error occur , will reconize easily
     console.log('url is', url);
     console.log('requesttype is', requestType);
     console.log('contenttype is', contentType);
